@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient Customizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="shortcut icon" href="color.jfif" type="image/x-icon">
+</head>
+<body id="body">
+    <h2>Linear Gradient Customizer</h2>
+    <div class="container">
+        <div class="display" id="display">
+
+        </div>
+        <div class="option">
+            <div class="select1">
+                <p>Gradient Direction</p>
+                <select id="directions">
+                     <option value="to right">to right</option>
+                     <option value="to top">to top</option>
+                     <option value="to bottom">to bottom</option>
+                     <option value="to left">to left</option>
+                     <option value="to bottom right">to bottom right</option>
+                     <option value="to bottom left">to bottom left</option> 
+                     <option value="to top right">to top right</option>
+                     <option value="to top left">to top left</option>
+                </select>
+            </div>
+            <div class="select2">
+                <p>Number of colors</p>
+                <select id="noc" onchange="changeColors()">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <div class="colors">
+            <input type="color" value="#F5190B" id="color1">
+            <input type="color" value="#EAF50B" id="color2">
+            <input type="color" value="#0BF5E3" id="color3">
+            <input type="color" value="#0B55F5" id="color4">
+        </div>
+        <div class="copytext" id="text">
+            linear-gradient (to right, #F5190B, #EAF50B)           
+        </div>
+        <div class="copy">
+            <button onclick="change()">Copy <i class="fa-solid fa-copy"></i></button>            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

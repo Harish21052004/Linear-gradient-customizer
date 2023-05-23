@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(7, 11, 207, 0.733);
+    flex-direction: column;
+}
+
+body h2{
+    font-size: 30px;
+    text-align: center;
+    background: rgba(238, 238, 241, 0.781);
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.container{
+    width: 400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(238, 238, 241, 0.781);
+}
+
+.container .display{
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(to right,#F5190B,#EAF50B);
+    margin: 30px 30px 0 30px;
+    border-radius: 10px;
+}
+
+.container .option{
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option .select1 p, .option .select2 p{
+    width: 100%;
+}
+
+.option .select1 select{
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.option .select2 select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.container .colors{
+    width: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .colors #color3, .container .colors #color4{
+    display: none;
+}
+
+.container .colors input{
+    width: 80px;
+    border: none;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container .copytext
+{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.container .copy button{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    background: rgba(7, 11, 207, 0.733);
+    cursor: pointer;
+}
+
+.container .copy button:hover{
+    background: rgba(32, 35, 170, 0.733);
+}
